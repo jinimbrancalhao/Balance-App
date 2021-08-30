@@ -8,4 +8,6 @@ router.post('/reflections', controllers.createReflecton)
 
 router.get('/reflections', controllers.getAllReflections)
 
+router.delete('/reflections/:id', controllers.deleteReflection)
+
 module.exports = router
