@@ -4,7 +4,7 @@ const Schema = mongoose.Schema
 const Goal = new Schema(
   {
     title: { type: String, required: true },
-    start: { type: Number, required: true },
+    start: { type: String, required: true },
     end: { type: String, required: true },
     description: { type: String, required: true }
   },
