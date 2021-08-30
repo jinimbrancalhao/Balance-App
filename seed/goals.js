@@ -1,2 +1,2 @@
 const db = require('../db')
-const { Goal } = require('../models')
+const Goal = require('../models/goal')
