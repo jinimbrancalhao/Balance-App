@@ -1,6 +1,6 @@
 const Reflection = require('../models/reflection')
 
-const createReflecton = async (req, res) => {
+const createReflection = async (req, res) => {
   try {
     const reflection = await new Reflection(req.body)
     await reflection.save()
@@ -35,7 +35,7 @@ const deleteReflection = async (req, res) => {
 }
 
 module.exports = {
-  createReflecton,
+  createReflection,
   getAllReflections,
   deleteReflection
 }
