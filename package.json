@@ -1,0 +1,23 @@
+{
+  "name": "balance",
+  "version": "1.0.0",
+  "description": "## Date: 8/29/2021",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jinimbrancalhao/Balance.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jinimbrancalhao/Balance/issues"
+  },
+  "homepage": "https://github.com/jinimbrancalhao/Balance#readme",
+  "dependencies": {
+    "mongoose": "^6.0.2"
+  }
+}
