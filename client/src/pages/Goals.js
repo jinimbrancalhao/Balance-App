@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import GoalCard from '../components/GoalCard'
 
@@ -8,14 +8,24 @@ const Goals = () => {
   const getGoals = async () => {
     const res = await axios.get('http://localhost:3001/api/goals')
     console.log(res)
-    setGoals(res)
+    // setGoals(res)
   }
+
+  useEffect(() => {
+    getGoals()
+  }, [])
 
   return (
     <div>
       <h1>Goals</h1>
       {goals.map((goal) => (
-        <GoalCard />
+        <GoalCard
+          key={goal.id}
+          title={goal.title}
+          start={goal.start}
+          end={goal.end}
+          description={goal.description}
+        />
       ))}
     </div>
   )
