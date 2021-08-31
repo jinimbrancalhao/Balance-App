@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import axios from 'axios'
+import GoalCard from '../components/GoalCard'
 
 const Goals = () => {
   const [goals, setGoals] = useState([])
@@ -13,6 +14,9 @@ const Goals = () => {
   return (
     <div>
       <h1>Goals</h1>
+      {goals.map((goal) => (
+        <GoalCard />
+      ))}
     </div>
   )
 }
