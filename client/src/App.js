@@ -2,11 +2,20 @@ import './App.css'
 import Home from './pages/Home'
 import Goals from './pages/Goals'
 import Reflections from './pages/Reflections'
+import Header from './components/Header'
+import { Route, Switch } from 'react-router-dom'
 
 function App() {
   return (
     <div>
-      <h1>Hello</h1>
+      <Header />
+      <main>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/goals" component={Goals} />
+          <Route exact path="/reflections" component={Reflections} />
+        </Switch>
+      </main>
     </div>
   )
 }
