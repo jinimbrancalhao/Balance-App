@@ -1,4 +1,3 @@
-import './App.css'
 import Home from './pages/Home'
 import Goals from './pages/Goals'
 import Reflections from './pages/Reflections'
