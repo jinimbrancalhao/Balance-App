@@ -7,8 +7,7 @@ const Goals = () => {
 
   const getGoals = async () => {
     const res = await axios.get('http://localhost:3001/api/goals')
-    console.log(res)
-    // setGoals(res)
+    setGoals(res.data.goals)
   }
 
   useEffect(() => {

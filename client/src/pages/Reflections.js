@@ -1,6 +1,5 @@
 import axios from 'axios'
-import React from 'react'
-import reflection from '../../../models/reflection'
+import React, { useState, useEffect } from 'react'
 import ReflectionCard from '../components/ReflectionCard'
 
 const Reflections = () => {
@@ -8,11 +7,11 @@ const Reflections = () => {
 
   const getReflections = async () => {
     const res = await axios.get('http://localhost:3001/api/reflections')
-    setReflections(res)
+    setReflections(res.data.reflections)
   }
 
   useEffect(() => {
-    getReflections
+    getReflections()
   }, [])
 
   return (
@@ -20,6 +19,7 @@ const Reflections = () => {
       <h1>Reflections</h1>
       {reflections.map((reflection) => (
         <ReflectionCard
+          key={reflection.key}
           title={reflection.title}
           date={reflection.date}
           description={reflection.description}
