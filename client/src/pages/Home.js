@@ -62,6 +62,7 @@ const Home = () => {
   const handleSubmitRef = (e) => {
     e.preventDefault()
     addNewReflection(newReflection)
+    document.getElementById('post-ref').reset()
   }
 
   return (
@@ -99,7 +100,7 @@ const Home = () => {
       </div>
       <div>Make Reflection</div>
       <div>
-        <form onSubmit={handleSubmitRef}>
+        <form onSubmit={handleSubmitRef} id="post-ref">
           <input
             name="title"
             onChange={(e) => {
