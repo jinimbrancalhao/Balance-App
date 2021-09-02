@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { useState } from 'react'
+import { Form, Button } from 'react-bootstrap'
 
 const Home = () => {
   const [newGoal, setNewGoal] = useState({
@@ -70,67 +71,77 @@ const Home = () => {
       <h1 className="title">Balance</h1>
       <div className="heading">Make Goal</div>
       <div className="form">
-        <form onSubmit={handleSubmit} id="post">
-          <h3>Title</h3>
-          <input
-            name="title"
-            onChange={(e) => {
-              handleChange(e)
-            }}
-          />
-          <h3>Start Goal</h3>
-          <input
-            name="start"
-            onChange={(e) => {
-              handleChange(e)
-            }}
-          />
-          <h3>End Goal</h3>
-          <input
-            name="end"
-            onChange={(e) => {
-              handleChange(e)
-            }}
-          />
-          <h3>Description</h3>
-          <input
-            name="description"
-            onChange={(e) => {
-              handleChange(e)
-            }}
-          />
-          <div className="button">
-            <button type="submit">Submit</button>
-          </div>
-        </form>
+        <Form onSubmit={handleSubmit} id="post">
+          <Form.Group className="mb-3">
+            <Form.Label>Title</Form.Label>
+            <Form.Control
+              name="title"
+              onChange={(e) => {
+                handleChange(e)
+              }}
+            />
+          </Form.Group>
+          <Form.Group className="mb-3">
+            <Form.Label>Start Goal</Form.Label>
+            <Form.Control
+              name="start"
+              onChange={(e) => {
+                handleChange(e)
+              }}
+            />
+          </Form.Group>
+          <Form.Group className="mb-3">
+            <Form.Label>End Goal</Form.Label>
+            <Form.Control
+              name="end"
+              onChange={(e) => {
+                handleChange(e)
+              }}
+            />
+          </Form.Group>
+          <Form.Group className="mb-3">
+            <Form.Label>Description</Form.Label>
+            <Form.Control
+              name="description"
+              onChange={(e) => {
+                handleChange(e)
+              }}
+            />
+          </Form.Group>
+          <Button type="submit">Submit</Button>
+        </Form>
       </div>
       <div className="heading">Make Reflection</div>
       <div className="form">
         <form onSubmit={handleSubmitRef} id="post-ref">
-          <h3>Title</h3>
-          <input
-            name="title"
-            onChange={(e) => {
-              handleChangeRef(e)
-            }}
-          />
-          <h3>Date</h3>
-          <input
-            name="date"
-            onChange={(e) => {
-              handleChangeRef(e)
-            }}
-          />
-          <h3>Description</h3>
-          <input
-            name="description"
-            onChange={(e) => {
-              handleChangeRef(e)
-            }}
-          />
-          <div className="button">
-            <button type="submit">Submit</button>
-          </div>
+          <Form.Group className="mb-3">
+            <Form.Label>Title</Form.Label>
+            <Form.Control
+              name="title"
+              onChange={(e) => {
+                handleChangeRef(e)
+              }}
+            />
+          </Form.Group>
+          <Form.Group className="mb-3">
+            <Form.Label>Date</Form.Label>
+            <Form.Control
+              name="date"
+              onChange={(e) => {
+                handleChangeRef(e)
+              }}
+            />
+          </Form.Group>
+          <Form.Group className="mb-3">
+            <Form.Label>Description</Form.Label>
+            <Form.Control
+              name="description"
+              onChange={(e) => {
+                handleChangeRef(e)
+              }}
+            />
+          </Form.Group>
+          <Button type="submit">Submit</Button>
         </form>
       </div>
     </div>
