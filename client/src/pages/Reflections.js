@@ -17,15 +17,17 @@ const Reflections = () => {
   return (
     <div>
       <h1 className="title">Reflections</h1>
-      {reflections.map((reflection) => (
-        <ReflectionCard
-          key={reflection._id}
-          title={reflection.title}
-          date={reflection.date}
-          description={reflection.description}
-          id={reflection._id}
-        />
-      ))}
+      <div className="card-outer">
+        {reflections.map((reflection) => (
+          <ReflectionCard
+            key={reflection._id}
+            title={reflection.title}
+            date={reflection.date}
+            description={reflection.description}
+            id={reflection._id}
+          />
+        ))}
+      </div>
     </div>
   )
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 import axios from 'axios'
+import { Card, Button } from 'react-bootstrap'
 
 const GoalCard = (props) => {
   const deleteGoal = async () => {
@@ -7,16 +8,16 @@ const GoalCard = (props) => {
   }
 
   return (
-    <div>
-      <div>{props.title}</div>
-      <div>
-        {props.start}
-        {props.end}
-      </div>
-      <div>{props.description}</div>
-      <div>
-        <button onClick={deleteGoal}>Delete</button>
-      </div>
+    <div className="card-inner">
+      <Card style={{ width: '18rem' }}>
+        <Card.Body>
+          <Card.Title>{props.title}</Card.Title>
+          <Card.Text>{props.start}</Card.Text>
+          <Card.Text>{props.end}</Card.Text>
+          <Card.Text>{props.description}</Card.Text>
+          <Button onClick={deleteGoal}>Delete</Button>
+        </Card.Body>
+      </Card>
     </div>
   )
 }

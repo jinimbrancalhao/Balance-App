@@ -17,16 +17,18 @@ const Goals = () => {
   return (
     <div>
       <h1 className="title">Goals</h1>
-      {goals.map((goal) => (
-        <GoalCard
-          key={goal._id}
-          title={goal.title}
-          start={goal.start}
-          end={goal.end}
-          description={goal.description}
-          id={goal._id}
-        />
-      ))}
+      <div className="card-outer">
+        {goals.map((goal) => (
+          <GoalCard
+            key={goal._id}
+            title={goal.title}
+            start={goal.start}
+            end={goal.end}
+            description={goal.description}
+            id={goal._id}
+          />
+        ))}
+      </div>
     </div>
   )
 }

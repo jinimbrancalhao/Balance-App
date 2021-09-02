@@ -1,5 +1,6 @@
 import React from 'react'
 import axios from 'axios'
+import { Card, Button } from 'react-bootstrap'
 
 const ReflectionCard = (props) => {
   const deleteReflection = async () => {
@@ -7,13 +8,15 @@ const ReflectionCard = (props) => {
   }
 
   return (
-    <div>
-      <div>{props.title}</div>
-      <div>{props.date}</div>
-      <div>{props.description}</div>
-      <div>
-        <button onClick={deleteReflection}>Delete</button>
-      </div>
+    <div className="card-inner">
+      <Card style={{ width: '18rem' }}>
+        <Card.Body>
+          <Card.Title>{props.title}</Card.Title>
+          <Card.Text>{props.date}</Card.Text>
+          <Card.Text>{props.description}</Card.Text>
+          <Button onClick={deleteReflection}>Delete</Button>
+        </Card.Body>
+      </Card>
     </div>
   )
 }
