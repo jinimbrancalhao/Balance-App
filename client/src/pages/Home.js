@@ -71,24 +71,28 @@ const Home = () => {
       <div className="heading">Make Goal</div>
       <div className="form">
         <form onSubmit={handleSubmit} id="post">
+          <h3>Title</h3>
           <input
             name="title"
             onChange={(e) => {
               handleChange(e)
             }}
           />
+          <h3>Start Goal</h3>
           <input
             name="start"
             onChange={(e) => {
               handleChange(e)
             }}
           />
+          <h3>End Goal</h3>
           <input
             name="end"
             onChange={(e) => {
               handleChange(e)
             }}
           />
+          <h3>Description</h3>
           <input
             name="description"
             onChange={(e) => {
@@ -103,18 +107,21 @@ const Home = () => {
       <div className="heading">Make Reflection</div>
       <div className="form">
         <form onSubmit={handleSubmitRef} id="post-ref">
+          <h3>Title</h3>
           <input
             name="title"
             onChange={(e) => {
               handleChangeRef(e)
             }}
           />
+          <h3>Date</h3>
           <input
             name="date"
             onChange={(e) => {
               handleChangeRef(e)
             }}
           />
+          <h3>Description</h3>
           <input
             name="description"
             onChange={(e) => {
