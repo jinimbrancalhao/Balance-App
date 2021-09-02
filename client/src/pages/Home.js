@@ -68,8 +68,8 @@ const Home = () => {
   return (
     <div>
       <h1 className="title">Balance</h1>
-      <div>Make Goal</div>
-      <div>
+      <div className="heading">Make Goal</div>
+      <div className="form">
         <form onSubmit={handleSubmit} id="post">
           <input
             name="title"
@@ -95,11 +95,13 @@ const Home = () => {
               handleChange(e)
             }}
           />
-          <button type="submit">Submit</button>
+          <div className="button">
+            <button type="submit">Submit</button>
+          </div>
         </form>
       </div>
-      <div>Make Reflection</div>
-      <div>
+      <div className="heading">Make Reflection</div>
+      <div className="form">
         <form onSubmit={handleSubmitRef} id="post-ref">
           <input
             name="title"
@@ -119,7 +121,9 @@ const Home = () => {
               handleChangeRef(e)
             }}
           />
-          <button type="submit">Submit</button>
+          <div className="button">
+            <button type="submit">Submit</button>
+          </div>
         </form>
       </div>
     </div>

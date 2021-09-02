@@ -12,3 +12,23 @@ nav {
   text-decoration: none;
   color: #2c43b8;
 }
+
+.heading {
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.button {
+  text-align: center;
+}
+
+input {
+  width: 55vw;
+  height: 5vh;
+  margin: 2%;
+}
