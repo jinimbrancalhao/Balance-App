@@ -19,10 +19,11 @@ const Reflections = () => {
       <h1>Reflections</h1>
       {reflections.map((reflection) => (
         <ReflectionCard
-          key={reflection.key}
+          key={reflection._id}
           title={reflection.title}
           date={reflection.date}
           description={reflection.description}
+          id={reflection._id}
         />
       ))}
     </div>

@@ -19,11 +19,12 @@ const Goals = () => {
       <h1>Goals</h1>
       {goals.map((goal) => (
         <GoalCard
-          key={goal.id}
+          key={goal._id}
           title={goal.title}
           start={goal.start}
           end={goal.end}
           description={goal.description}
+          id={goal._id}
         />
       ))}
     </div>
