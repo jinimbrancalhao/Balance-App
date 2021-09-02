@@ -56,6 +56,7 @@ const Home = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
     addNewGoal(newGoal)
+    document.getElementById('post').reset()
   }
 
   const handleSubmitRef = (e) => {
@@ -68,7 +69,7 @@ const Home = () => {
       <h1 className="title">Balance</h1>
       <div>Make Goal</div>
       <div>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} id="post">
           <input
             name="title"
             onChange={(e) => {
