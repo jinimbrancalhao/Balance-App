@@ -1,0 +1,14 @@
+.title {
+  text-align: center;
+  color: #1727ae;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.link {
+  text-decoration: none;
+  color: #2c43b8;
+}

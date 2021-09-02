@@ -16,7 +16,7 @@ const Goals = () => {
 
   return (
     <div>
-      <h1>Goals</h1>
+      <h1 className="title">Goals</h1>
       {goals.map((goal) => (
         <GoalCard
           key={goal._id}

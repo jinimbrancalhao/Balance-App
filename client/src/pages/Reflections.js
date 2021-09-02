@@ -16,7 +16,7 @@ const Reflections = () => {
 
   return (
     <div>
-      <h1>Reflections</h1>
+      <h1 className="title">Reflections</h1>
       {reflections.map((reflection) => (
         <ReflectionCard
           key={reflection._id}

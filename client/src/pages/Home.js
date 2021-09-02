@@ -65,6 +65,7 @@ const Home = () => {
 
   return (
     <div>
+      <h1 className="title">Balance</h1>
       <div>Make Goal</div>
       <div>
         <form onSubmit={handleSubmit}>

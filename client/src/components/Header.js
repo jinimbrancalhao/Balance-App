@@ -5,9 +5,15 @@ const Header = () => {
   return (
     <header>
       <nav>
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="/goals">Goals</NavLink>
-        <NavLink to="/reflections">Reflections</NavLink>
+        <NavLink className="link" to="/">
+          Home
+        </NavLink>
+        <NavLink className="link" to="/goals">
+          Goals
+        </NavLink>
+        <NavLink className="link" to="/reflections">
+          Reflections
+        </NavLink>
       </nav>
     </header>
   )
