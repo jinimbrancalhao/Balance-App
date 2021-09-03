@@ -6,8 +6,6 @@ const logger = require('morgan')
 const cors = require('cors')
 const path = require('path')
 
-// require() imports and middleware here ^ ///////
-
 const PORT = process.env.PORT || 3001
 
 const app = express()
@@ -15,8 +13,6 @@ const app = express()
 app.use(cors())
 app.use(bodyParser.json())
 app.use(logger('dev'))
-
-// app.use() middleware here ^ ///////////////////
 
 app.use('/api', routes)
 
