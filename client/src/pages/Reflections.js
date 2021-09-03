@@ -24,15 +24,17 @@ const Reflections = () => {
     <div>
       <h1 className="title-home">Reflections</h1>
       <div className="card-outer">
-        {reflections.map((reflection) => (
-          <ReflectionCard
-            key={reflection._id}
-            title={reflection.title}
-            date={reflection.date}
-            description={reflection.description}
-            id={reflection._id}
-          />
-        ))}
+        {reflections
+          ? reflections.map((reflection) => (
+              <ReflectionCard
+                key={reflection._id}
+                title={reflection.title}
+                date={reflection.date}
+                description={reflection.description}
+                id={reflection._id}
+              />
+            ))
+          : null}
       </div>
     </div>
   )

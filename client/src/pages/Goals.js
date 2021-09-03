@@ -19,16 +19,18 @@ const Goals = () => {
     <div>
       <h1 className="title-home">Goals</h1>
       <div className="card-outer">
-        {goals.map((goal) => (
-          <GoalCard
-            key={goal._id}
-            title={goal.title}
-            start={goal.start}
-            end={goal.end}
-            description={goal.description}
-            id={goal._id}
-          />
-        ))}
+        {goals
+          ? goals.map((goal) => (
+              <GoalCard
+                key={goal._id}
+                title={goal.title}
+                start={goal.start}
+                end={goal.end}
+                description={goal.description}
+                id={goal._id}
+              />
+            ))
+          : null}
       </div>
     </div>
   )
