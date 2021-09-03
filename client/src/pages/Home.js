@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React, { useState } from 'react'
 import { Form, Button } from 'react-bootstrap'
+import BASE_URL from '../globals'
 
 const Home = () => {
   const [newGoal, setNewGoal] = useState({
@@ -28,12 +29,7 @@ const Home = () => {
 
   const addNewGoal = async (formdata) => {
     try {
-      const res = await axios.post(
-        process.env.NODE_ENV === 'production'
-          ? `${window.location.origin}/api/goals`
-          : 'http://localhost:3001/api/goals',
-        formdata
-      )
+      const res = await axios.post(`${BASE_URL}/goals`, formdata)
       return res.data
     } catch (error) {
       console.log(error)
@@ -42,12 +38,7 @@ const Home = () => {
 
   const addNewReflection = async (formdata) => {
     try {
-      const res = await axios.post(
-        process.env.NODE_ENV === 'production'
-          ? `${window.location.origin}/api/reflections`
-          : 'http://localhost:3001/api/reflections',
-        formdata
-      )
+      const res = await axios.post(`${BASE_URL}/reflections`, formdata)
       return res.data
     } catch (error) {
       console.log(error)
@@ -69,12 +60,14 @@ const Home = () => {
   return (
     <div className="whole-form">
       <h1 className="title-home">Balance</h1>
-      <p>
-        Welcome to Balance. Below you can begin to fill out some goals and
-        reflections. Keep in mind anyone can read what you write, so write
-        things you want others to see. This is a great place for people to learn
-        from and be inspired by the experiences of others.{' '}
-      </p>
+      <div className="paragraph">
+        <p>
+          Welcome to Balance. Below you can begin to fill out some goals and
+          reflections. Keep in mind anyone can read what you write, so write
+          things you want others to see. This is a great place for people to
+          learn from and be inspired by the experiences of others.{' '}
+        </p>
+      </div>
       <div className="heading-home">Make Goal</div>
       <div className="form">
         <Form onSubmit={handleSubmit} id="post">

@@ -1,10 +1,11 @@
 import React from 'react'
 import axios from 'axios'
 import { Card, Button } from 'react-bootstrap'
+import BASE_URL from '../globals'
 
 const GoalCard = (props) => {
   const deleteGoal = async () => {
-    await axios.delete(`http://localhost:3001/api/goals/${props.id}`)
+    await axios.delete(`${BASE_URL}/goals/${props.id}`)
     window.location.reload()
   }
 

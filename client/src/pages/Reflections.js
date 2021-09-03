@@ -1,12 +1,18 @@
 import axios from 'axios'
 import React, { useState, useEffect } from 'react'
 import ReflectionCard from '../components/ReflectionCard'
+import BASE_URL from '../globals'
 
 const Reflections = () => {
   const [reflections, setReflections] = useState([])
 
+  // const getReflections = async () => {
+  //   const res = await axios.get('http://localhost:3001/api/reflections')
+  //   setReflections(res.data.reflections)
+  // }
+
   const getReflections = async () => {
-    const res = await axios.get('http://localhost:3001/api/reflections')
+    const res = await axios.get(`${BASE_URL}/reflections`)
     setReflections(res.data.reflections)
   }
 

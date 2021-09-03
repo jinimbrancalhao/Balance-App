@@ -31,6 +31,8 @@ body {
 p {
   text-align: center;
   margin: 15px;
+  line-height: 30px;
+  padding: 30px;
 }
 
 .border {

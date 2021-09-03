@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import GoalCard from '../components/GoalCard'
+import BASE_URL from '../globals'
 
 const Goals = () => {
   const [goals, setGoals] = useState([])
 
   const getGoals = async () => {
-    const res = await axios.get('http://localhost:3001/api/goals')
+    const res = await axios.get(`${BASE_URL}/goals`)
     setGoals(res.data.goals)
   }
 
