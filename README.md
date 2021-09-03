@@ -10,11 +10,11 @@
 
 **_Description_**
 
-This app is a digital diary of sorts. Its purpose is to provide an easy way to reflect and set goals. One can add new goals and reflections, as well as browse through past goals and reflections. Diaries are usually structered with just an open space for people to write down their thoughts. The idea of this app is to serve the particular focus of reflecting on past experiences, and setting new goals to be happier and more succesful.
+This app is a place in which people can write reflections and goals, as well as view reflections and goals other people have written. The idea behind this app is people can share their stories and what they have learned from them. In addition, they can learn and be inspired by others.
 
 **_Technologies Used_**
 
-- Mongoose
+- MongoDB
 - Express
 - React
 - Node
@@ -36,6 +36,21 @@ This app is a digital diary of sorts. Its purpose is to provide an easy way to r
 
 ![ERD](./screenshots/erd.png)
 
+#### Home
+
+![Home](./screenshots/home.png)
+
+#### Goals
+
+![Goals](./screenshots/goals.png)
+
+#### Reflections
+
+![Reflections](./screenshots/reflections.png)
+
 **_Future Updates_**
+
+- One future update I wish to make is I want there to be accounts. People can make their posts either private or anonymous. What this would allow for is this app to be a private tool for people to reflect and set goals as well as a social app for people to connect and hear the stories of others.
+- I would love for the styling to be better. I would like for there to be more dynamic aspects. For example, giving the user more than just text boxes to write. Things like emojis could add to the user experience.
 
 **_Credits_**
