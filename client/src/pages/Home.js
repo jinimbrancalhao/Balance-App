@@ -68,8 +68,8 @@ const Home = () => {
 
   return (
     <div>
-      <h1 className="title">Balance</h1>
-      <div className="heading">Make Goal</div>
+      <h1 className="title-home">Balance</h1>
+      <div className="heading-home">Make Goal</div>
       <div className="form">
         <Form onSubmit={handleSubmit} id="post">
           <Form.Group className="mb-3">

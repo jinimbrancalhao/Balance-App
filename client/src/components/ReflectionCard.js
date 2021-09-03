@@ -5,6 +5,7 @@ import { Card, Button } from 'react-bootstrap'
 const ReflectionCard = (props) => {
   const deleteReflection = async () => {
     await axios.delete(`http://localhost:3001/api/reflections/${props.id}`)
+    window.location.reload()
   }
 
   return (
