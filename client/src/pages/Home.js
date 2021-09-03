@@ -67,8 +67,14 @@ const Home = () => {
   }
 
   return (
-    <div>
+    <div className="whole-form">
       <h1 className="title-home">Balance</h1>
+      <p>
+        Welcome to Balance. Below you can begin to fill out some goals and
+        reflections. Keep in mind anyone can read what you write, so write
+        things you want others to see. This is a great place for people to learn
+        from and be inspired by the experiences of others.{' '}
+      </p>
       <div className="heading-home">Make Goal</div>
       <div className="form">
         <Form onSubmit={handleSubmit} id="post">
@@ -111,7 +117,7 @@ const Home = () => {
           <Button type="submit">Submit</Button>
         </Form>
       </div>
-      <div className="heading">Make Reflection</div>
+      <div className="heading-home">Make Reflection</div>
       <div className="form">
         <form onSubmit={handleSubmitRef} id="post-ref">
           <Form.Group className="mb-3">

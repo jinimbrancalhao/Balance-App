@@ -10,13 +10,15 @@ const GoalCard = (props) => {
 
   return (
     <div className="card-inner">
-      <Card style={{ width: '18rem' }}>
+      <Card className="border" style={{ width: '18rem' }}>
         <Card.Body>
           <Card.Title>{props.title}</Card.Title>
           <Card.Text>{props.start}</Card.Text>
           <Card.Text>{props.end}</Card.Text>
           <Card.Text>{props.description}</Card.Text>
-          <Button onClick={deleteGoal}>Delete</Button>
+          <div className="delete-buttons">
+            <Button onClick={deleteGoal}>Delete</Button>
+          </div>
         </Card.Body>
       </Card>
     </div>

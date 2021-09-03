@@ -16,7 +16,7 @@ const Goals = () => {
 
   return (
     <div>
-      <h1 className="title">Goals</h1>
+      <h1 className="title-home">Goals</h1>
       <div className="card-outer">
         {goals.map((goal) => (
           <GoalCard

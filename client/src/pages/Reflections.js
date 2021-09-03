@@ -16,7 +16,7 @@ const Reflections = () => {
 
   return (
     <div>
-      <h1 className="title">Reflections</h1>
+      <h1 className="title-home">Reflections</h1>
       <div className="card-outer">
         {reflections.map((reflection) => (
           <ReflectionCard

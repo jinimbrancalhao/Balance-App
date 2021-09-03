@@ -15,7 +15,9 @@ const ReflectionCard = (props) => {
           <Card.Title>{props.title}</Card.Title>
           <Card.Text>{props.date}</Card.Text>
           <Card.Text>{props.description}</Card.Text>
-          <Button onClick={deleteReflection}>Delete</Button>
+          <div className="delete-buttons">
+            <Button onClick={deleteReflection}>Delete</Button>
+          </div>
         </Card.Body>
       </Card>
     </div>
