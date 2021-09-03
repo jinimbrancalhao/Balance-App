@@ -10,7 +10,7 @@
 
 **_Description_**
 
-This app is a place in which people can write reflections and goals, as well as view reflections and goals other people have written. The idea behind this app is people can share their stories and what they have learned from them. In addition, they can learn and be inspired by others.
+This app is a place in which people can write reflections and goals, as well as view reflections and goals other people have written. The motivation behind this app is it can serve not only as a way for people to share things about themselves, but to learn and be insired by others as well.
 
 **_Technologies Used_**
 
@@ -19,12 +19,19 @@ This app is a place in which people can write reflections and goals, as well as 
 - React
 - Node
 - Heroku
+- React-Bootstrap
+- Mongoose
+- MongoDB Atlas
 
 **_Getting Started_**
+
+#### Planning:
 
 [Trello](https://trello.com/b/TXOgdIr6/balance)
 
 [Diagrams](https://lucid.app/lucidchart/28e5f9a4-7e7f-43cb-b1f8-a738ba6b39da/edit?beaconFlowId=D9C4A8D2E07F1147&page=0_0#)
+
+#### Deployed Link:
 
 [Heroku Link](https://radiant-depths-30152.herokuapp.com/goals)
 
@@ -52,7 +59,10 @@ This app is a place in which people can write reflections and goals, as well as 
 
 **_Future Updates_**
 
-- One future update I wish to make is I want there to be accounts. People can make their posts either private or anonymous. What this would allow for is this app to be a private tool for people to reflect and set goals as well as a social app for people to connect and hear the stories of others.
-- I would love for the styling to be better. I would like for there to be more dynamic aspects. For example, giving the user more than just text boxes to write. Things like emojis could add to the user experience.
+- One future update I wish to make is authorization. People can make their posts either private or anonymous. What this would allow for is this app to be a private tool for people to reflect and set goals as well as a social app for people to connect and hear the stories of others.
+- I would love for the styling to be better. A more dynamic website would make for a far more interesting and engaging user experience.
 
 **_Credits_**
+
+- React Bootstrap
+- Stack Overflow
